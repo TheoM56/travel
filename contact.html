@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Travel</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+
+	<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+</head>
+<body>
+	<div id="page">
+
+		<!--bandeau haut-->
+		<section id="bandeau_haut">
+			<ul id="menu_haut">
+				<li><a href="#" id="no_border">Blog</a></li>
+				<li><a href="#">Nous contacter</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a href="#">Site mobile</a></li>
+			</ul>
+
+			<a href="#" class="blanc">&gt; &gt; Espace client</a>
+		</section>
+	   <!--header et logo-->
+	    <header id="bandeau">
+	   		<a href="index.html">
+	   		<img src="images-travel/logo-travel.jpg" alt="Logo Travel" />
+	    	</a>
+
+	    <nav id="menu_principal">
+	    	<label for="menu_responsive" class="menu_responsive">Menu
+				</label><input type="checkbox" id="menu_responsive" role="bouton">
+	    	<ul>
+	    		<li><a href="index.html">ACCUEIL</a></li>
+	    		<li><a href="#">VOLS & SEJOURS</a>
+				<ul class="sous_menu">
+					<li><a href="#">Vols discount</a></li>
+					<li><a href="#">Séjour de rêve</a></li>
+				</ul>
+	    		</li>
+	    		<li><a href="#">VOLS</a></li>
+	    		<li><a href="sejours.html">SEJOURS</a></li>
+	    		<li><a href="services.html">SERVICES</a></li>
+	    		<li><a href="contact.html" class="choix">CONTACT</a></li>
+	    	</ul>
+	    </nav>	
+	    </header>
+	    <main id="contenu_contact">
+	    	<div id="titres_hauts">
+	    		<p class="little">Nos coordonnées</p>
+	    		<p> Nous contacter</p>
+	    	</div>
+
+	    	<div id="localisation">
+	    		<address> Travel and Pleasure<br/>
+	    			17 bis au Amiral Courbet <br/>
+	    			56 100 LORIENT<br/>
+	    			France <br/>
+	    			Téléphone : 02 97 15 15 15 <br/>
+	    		</address>
+	    		<div id="carte">
+	    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.916615283592!2d-3.366989584700558!3d47.744272579193954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48105e4e0418d49b%3A0xb6716a9016f5fee6!2s17+Rue+Amiral+Courbet%2C+56100+Lorient!5e0!3m2!1sfr!2sfr!4v1540224121350" width="350" height="300" frameborder="0"  allowfullscreen></iframe>
+	    	</div>
+	    </div>
+	   
+	    <form action="envoyerform.php" method="post">
+	    	<fieldset id="coordonnees">
+	    		<legend>Vos coordonnées</legend>
+	    	
+			<p>
+				<input type="radio" name="civilite" id="M" value="M" checked /> <label for="M" class="petit">M.</label>
+			
+			<input type="radio" name="civilite" id="Mme" value="Mme"/> <label for="Mme">Mme.</label></p>
+
+			<p><label for="nom">Votre Nom</label><input type="text" name="nom" id="nom" placeholder="tapez votre nom"/></p>
+
+			<p><label for="prenom">Votre Prénom</label><input type="text" name="prenom" id="prenom" placeholder="tapez votre nom"/></p>
+
+			<p><label for="adresse"> Votre adresse</label><textarea name="adresse" id="adresse" placeholder="tapez votre adresse"></textarea></p>
+						<div class="colonne">
+				
+
+				<p><label for="code_postal">Code postal</label><input type="text" name="code_postal" id="code_postal" placeholder="cp"/>
+					
+				<label class="ville" for="ville">Ville</label><input type="text" name="ville" id="ville" placeholder="Ville"/>
+			</p>
+
+				<p>
+				<label for="pays">Votre pays</label>
+				<select name="pays" id="pays">
+					<option value="France">France</option>
+					<option value="Italie">Italie</option>
+					<option value="Chine" selected>Chine</option>
+				</select>
+			</p>
+	    	</fieldset>
+
+	    	<fieldset>
+	    		<legend>Votre Message</legend>
+				<div class="colonne">
+					<p>
+			Votre message concerne: <input type="checkbox" name="preference" id="vols" value="vols"><label for="vols" class="petit">Vols</label>
+
+			<input type="checkbox" name="preference" id="sejours" value="sejours"/><label for="sejours" class="petit">Séjours</label>
+
+			<input type="checkbox" name="preference" id="autres" value="autres"/><label for="autres">Autres</label>
+			</p>
+			<p><label for="message"> Votre Message</label><textarea rows="10" cols="20" name="message" id="message" placeholder="tapez votre message"></textarea></p>
+			</div>
+			</fieldset>
+
+			<p class="bouton"><input type="submit" value="Envoyer">
+			<input type="reset" value="Annuler">
+		</p>
+      </form>
+	    </main>
+	     <!--Div réseaux-->
+			<div id="reseaux">
+				Nous suivre<br />
+				<a href="#">
+					<img src="images-travel/facebook.jpg" alt="Suivre Travel sur Facebook">
+				</a>
+				<a href="#">
+					<img src="images-travel/twitter.jpg" alt="Suivre Travel sur Twitter">
+				</a>
+			</div>
+
+	</div>
+	<footer id="footer">
+		<div id="footer-content">
+			<p>&copy 2018-Tous droits réservés</p>
+			<p><a href="#">Infos légales</a></p>
+		</div>	
+	</footer>	
+	</div>
+</body>
+</html>

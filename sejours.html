@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Séjours</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	<div id="page">
+
+		<!--bandeau haut-->
+		<section id="bandeau_haut">
+			<ul id="menu_haut">
+				<li><a href="#" id="no_border">Blog</a></li>
+				<li><a href="#">Nous contacter</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a href="#">Site mobile</a></li>
+			</ul>
+
+			<a href="#" class="blanc">&gt; &gt; Espace client</a>
+		</section>
+	   <!--header et logo-->
+	    <header id="bandeau">
+	   	<a href="index.html">
+	   	<img src="images-travel/logo-travel.jpg" alt="Logo Travel" />
+	    </a>
+
+	    <nav id="menu_principal">
+	    	<label for="menu_responsive" class="menu_responsive">Menu
+				</label><input type="checkbox" id="menu_responsive" role="bouton">
+	    	<ul>
+	    		<li><a href="index.html">ACCUEIL</a></li>
+	    		<li><a href="#">VOLS & SEJOURS</a>
+				<ul class="sous_menu">
+					<li><a href="#">Vols discount</a></li>
+					<li><a href="#">Séjour de rêve</a></li>
+				</ul>
+	    		</li>
+	    		<li><a href="#">VOLS</a></li>
+	    		<li><a href="sejours.html" class="choix">SEJOURS</a></li>
+	    		<li><a href="services.html">SERVICES</a></li>
+	    		<li><a href="contact.html">CONTACT</a></li>
+	    	</ul>
+	    </nav>	
+	    </header>
+		
+		<!-- page sejours-->
+		<main id="contenu_sejour">
+			<!--séjours en France-->
+			<div class="bloc_contenu">
+				<img src="images-travel/photo1.jpg" alt="Séjours en France" class="img-deco">
+				<h2>Séjours en France</h2>
+				<!--liste choix séjour-->
+				<p> <label for="sejour_france">Choisissez votre séjour</label>
+					<select name="sejour_france" id="sejour_france">
+						<option value="Ardèche" selected>Ardèche</option>
+						<option value="Alsace">Alsace</option>
+						<option value="Limousin">Limousin</option>
+						<option value="Béarn">Béarn</option>
+					</select>
+				</p>
+
+				<article class="sejours">
+					<h3>Ardèche</h3>
+					<img src="images-travel/ardeche.jpg" alt="sejour en Ardèche">
+					<a href="#">Suite</a>
+				</article>
+				<article class="sejours">
+					<h3>Alsace</h3>
+					<img src="images-travel/alsace.jpg" alt="sejour en Alsace">
+					<a href="#">Suite</a>
+				</article>
+				<article class="sejours">
+					<h3>Limousin</h3>
+					<img src="images-travel/limousin.jpg" alt="sejour en Limousin">
+					<a href="#">Suite</a>
+				</article>
+				<article class="sejours">
+					<h3>Béarn</h3>
+					<img src="images-travel/bearn.jpg" alt="sejour au Béarn">
+					<a href="#">Suite</a>
+				</article>
+			</div>
+
+            <!--séjours à l'étranger-->
+			<div class="bloc_contenu">
+				<img src="images-travel/photo3.jpg" alt="Séjours en France" class="img-deco">
+				<h2>Séjours à l'étranger</h2>
+				<p> <label for="sejour_france">Choisissez votre séjour</label>
+					<select name="sejour_etranger" id="sejour_etranger">
+						<option value="USA" selected>USA</option>
+						<option value="Inde">Inde</option>
+						<option value="Italie">Italie</option>
+						<option value="Chine">Chine</option>
+					</select>
+				</p>
+				<article class="sejours">
+					<h3>USA</h3>
+					<img src="images-travel/usa.jpg" alt="sejour aux USA">
+					<a href="#">Suite</a>
+				</article>
+				<article class="sejours">
+					<h3>Inde</h3>
+					<img src="images-travel/inde.jpg" alt="sejour en Inde">
+					<a href="#">Suite</a>
+				</article>
+				<article class="sejours">
+					<h3>Italie</h3>
+					<img src="images-travel/italie.jpg" alt="sejour en Italie">
+					<a href="#">Suite</a>
+				</article>
+				<article class="sejours">
+					<h3>Chine</h3>
+					<img src="images-travel/chine.jpg" alt="sejour en Chine">
+					<a href="#">Suite</a>
+				</article>
+			</div>				
+		</main>	
+
+		<!--Div réseaux-->
+			<div id="reseaux">
+				Nous suivre<br />
+				<a href="#">
+					<img src="images-travel/facebook.jpg" alt="Suivre Travel sur Facebook">
+				</a>
+				<a href="#">
+					<img src="images-travel/twitter.jpg" alt="Suivre Travel sur Twitter">
+				</a>
+			</div>
+	</div>
+	<footer id="footer">
+		<div id="footer-content">
+			<p>&copy 2018-Tous droits réservés</p>
+			<p><a href="infos_legales.html">Infos légales</a></p>
+		</div>	
+	</footer>	
+	
+</body>
+</html>
